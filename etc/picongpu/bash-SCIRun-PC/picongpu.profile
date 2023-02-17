@@ -2,9 +2,9 @@
 # Name and Path of this Script ############################### (DO NOT change!)
 export PIC_PROFILE=$(cd $(dirname $BASH_SOURCE) && pwd)"/"$(basename $BASH_SOURCE)
 
-# Note: This script is intended to be run from the ~ (defined below)
+# Note: This script is intended to be run from the ~ (the $HOME) directory
 #       Existing 'scratch' and 'picInputs' directories are deleted only when this 
-#       script is run from the Base_directory
+#       script is run from ~/
 #
 
 # Delete existing directories
