@@ -8,7 +8,7 @@
 
     git clone https://github.com/kimjohn1/SCIRun.git
     cd SCIRun
-    git checkout asynch-PC
+    git checkout old_asynch-PC
     cd bin
     cmake -DQt5_PATH=~/Qt/5.15.2/gcc_64 -DWITH_OSPRAY=OFF ../Superbuild    #use cmake -DQt5_PATH= ... if cmake -DQt_PATH= doesn't work
     make -j8

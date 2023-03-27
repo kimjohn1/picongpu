@@ -57,5 +57,5 @@ else
 fi
 
 if [ $? -eq 0 ] ; then
-  mpiexec -am !TBG_dstPath/tbg/openib.conf --mca mpi_leave_pinned 0 -npernode !TBG_gpusPerNode -n !TBG_tasks !TBG_dstPath/input/bin/picongpu !TBG_author !TBG_programParams | tee output
+  mpiexec -am !TBG_dstPath/tbg/openib.conf --bind-to none --mca mpi_leave_pinned 0 -npernode !TBG_gpusPerNode -n !TBG_tasks !TBG_dstPath/input/bin/picongpu !TBG_author !TBG_programParams | tee output
 fi
