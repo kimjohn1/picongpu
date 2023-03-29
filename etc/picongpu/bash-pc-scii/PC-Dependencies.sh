@@ -22,4 +22,5 @@
     apt -y install git
     apt -y install rsync
     apt -y install qt5-qmake
+#    apt -y install qtwayland5
 
