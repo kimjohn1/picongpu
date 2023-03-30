@@ -11,22 +11,22 @@ export PIC_PROFILE=$(cd $(dirname $BASH_SOURCE) && pwd)"/"$(basename $BASH_SOURC
 export PIC_BACKEND="cuda:86"        # running on GPU, compute capability 8.6 (RTX 3060)
 #export PIC_BACKEND="cuda:89"        # running on GPU, compute capability 8.9 (RTX 4090)
 
-export SCRATCH=~/scratch
-export PICSRC=~/src/picongpu
+export SCRATCH=/Project/scratch
+export PICSRC=/Project/src/picongpu
 export PIC_EXAMPLES=$PICSRC/share/picongpu/examples
-export PIC_CLONE=~/picInputs
+export PIC_CLONE=/Project/picInputs
 export PIC_CFG=etc/picongpu
 export PIC_OUTPUT=$SCRATCH/runs
 
 export PATH=$PATH:$PICSRC:$PICSRC/bin:$PICSRC/src/tools/bin
 export PYTHONPATH=$PICSRC/lib/python:$PYTHONPATH
 
-export CMAKE_PREFIX_PATH=~/lib/ADIOS2:$CMAKE_PREFIX_PATH
-export LD_LIBRARY_PATH=~/lib/ADIOS2/lib:$LD_LIBRARY_PATH
-export CMAKE_PREFIX_PATH=~/lib/pngwriter:$CMAKE_PREFIX_PATH
-export LD_LIBRARY_PATH=~/lib/pngwriter/lib:$LD_LIBRARY_PATH
-export CMAKE_PREFIX_PATH=~/lib/openPMD-api:$CMAKE_PREFIX_PATH
-export LD_LIBRARY_PATH=~/lib/openPMD-api/lib:$LD_LIBRARY_PATH
+export CMAKE_PREFIX_PATH=/Project/lib/ADIOS2:$CMAKE_PREFIX_PATH
+export LD_LIBRARY_PATH=/Project/lib/ADIOS2/lib:$LD_LIBRARY_PATH
+export CMAKE_PREFIX_PATH=/Project/lib/pngwriter:$CMAKE_PREFIX_PATH
+export LD_LIBRARY_PATH=/Project/lib/pngwriter/lib:$LD_LIBRARY_PATH
+export CMAKE_PREFIX_PATH=/Project/lib/openPMD-api:$CMAKE_PREFIX_PATH
+export LD_LIBRARY_PATH=/Project/lib/openPMD-api/lib:$LD_LIBRARY_PATH
 
 # Set "tbg" default options ######################################
 #
@@ -43,8 +43,8 @@ echo PIC_BACKEND is: $PIC_BACKEND from the picongpu_reRun.profile
 
 # Compile and run PIConGPU
 #Modify the 1.cfg file if needed, this becomes unnecessary after PIConGPU issue 4004 is implemented
-#pic-create $PIC_EXAMPLES/LaserWakefield $~/picInputs/myLWFA
-#cd $~/picInputs/myLWFA
+#pic-create $PIC_EXAMPLES/LaserWakefield $/Project/picInputs/myLWFA
+#cd $/Project/picInputs/myLWFA
 #pic-build 2>err.txt | tee out.txt
 #tbg -s bash -c etc/picongpu/1.cfg -t etc/picongpu/bash/mpiexec.tpl $SCRATCH/runs/lwfa_001 2>erroutput
 
