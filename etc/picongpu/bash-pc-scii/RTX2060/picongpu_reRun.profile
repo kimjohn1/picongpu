@@ -7,7 +7,7 @@ export PIC_PROFILE=$(cd $(dirname $BASH_SOURCE) && pwd)"/"$(basename $BASH_SOURC
 # Set variables and paths
 #export PIC_BACKEND="omp2b:native"   # running on CPU
 #export PIC_BACKEND="cuda:61"        # running on GPU, compute capability 6.1 (GTX 1070)
-export PIC_BACKEND="cuda:75"        # running on GPU, compute capability 7.5 (GTX 2060)
+export PIC_BACKEND="cuda:75"        # running on GPU, compute capability 7.5 (RTX 2060)
 #export PIC_BACKEND="cuda:86"        # running on GPU, compute capability 8.6 (RTX 3060)
 #export PIC_BACKEND="cuda:89"        # running on GPU, compute capability 8.9 (RTX 4090)
 
