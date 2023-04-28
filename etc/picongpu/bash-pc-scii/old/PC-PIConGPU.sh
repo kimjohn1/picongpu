@@ -35,30 +35,30 @@
 #    apt -y install cmake file cmake-curses-gui
 
 # Load openmpi
-    sudo apt -y install libopenmpi-dev
+    sudo apt install -y libopenmpi-dev
 
 # Load zlib
-    sudo apt -y install zlib1g-dev
+    sudo apt install zlib1g-dev
 
 # Load boost Installs version 1.74.0
     sudo apt -y install libboost-program-options-dev libboost-filesystem-dev libboost-system-dev libboost-math-dev libboost-serialization-dev
 
 # Load git - accomplished in Dependencies
-#    sudo apt -y install git
+#    sudo apt install -y git
 
 # Load rsync - accomplished in Dependencies
-#    sudo apt -y install rsync
+#    sudo apt install -y rsync
 
 # Retrieve PIConGPU source code and change to the -dev branch
     cd ~/src
     git clone https://github.com/kimjohn1/picongpu.git
     cd picongpu
-    git checkout dev_2
+    git checkout Vis
     cd ~/
 
 # Load libpng
     cd ~/
-    sudo apt -y install libpng-dev
+    sudo apt install -y libpng-dev
 
 # Load pngwriter
     cd ~/src
@@ -73,7 +73,7 @@
 
 # Load hdf5 - apt installs version 1.10.4
     cd ~/
-    sudo apt -y install libhdf5-openmpi-dev
+    sudo apt install -y libhdf5-openmpi-dev
 
 # Load ADIOS2 - installs latest version
     cd ~/src
