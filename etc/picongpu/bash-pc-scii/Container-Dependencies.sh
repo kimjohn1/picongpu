@@ -1,4 +1,4 @@
-#    The following files should be present in the /Project directory when installing the Project
+#    The following files show individual parts of the .def file
 #    Container-Dependencies.sh
 #    Container-PIConGPU.sh
 #    Container-Qt.sh
@@ -17,6 +17,6 @@
     apt -y install git
     apt -y install rsync
     apt -y install qt5-qmake
-    apt -y install xorg
-#    sudo apt -y install qtwayland5
+    apt -y install qtwayland5
+    apt -y install xapp          #does away with an error report when SCIRun starts
 

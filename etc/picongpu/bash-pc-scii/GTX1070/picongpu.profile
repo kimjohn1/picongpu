@@ -8,8 +8,8 @@ export PIC_PROFILE=$(cd $(dirname $BASH_SOURCE) && pwd)"/"$(basename $BASH_SOURC
 #
 
 # Delete existing directories
-rm -rf scratch
-rm -rf picInputs
+rm -rf scratch/*
+rm -rf picInputs/*
 
 # Create directories
 mkdir -p /Project/picInputs
