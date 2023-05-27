@@ -13,7 +13,8 @@ export PIC_BACKEND="cuda:86"        # running on GPU, compute capability 8.6 (RT
 
 export SCRATCH=~/scratch
 export PICSRC=~/src/picongpu
-export PIC_EXAMPLES=$PICSRC/share/picongpu/examples
+#export PIC_EXAMPLES=$PICSRC/share/picongpu/examples
+export PIC_EXAMPLES=~/simulations
 export PIC_CLONE=~/picInputs
 export PIC_CFG=etc/picongpu
 export PIC_OUTPUT=$SCRATCH/runs
